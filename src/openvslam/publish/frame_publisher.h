@@ -71,7 +71,7 @@ protected:
 
     // -------------------------------------------
     //! mutex to access variables below
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 
     //! raw img
     cv::Mat img_;

@@ -32,6 +32,8 @@ public:
      */
     virtual ~frame_publisher();
 
+    tracker_state_t get_tracker_state() const;
+
     /**
      * Update tracking information
      * NOTE: should be accessed from system thread
